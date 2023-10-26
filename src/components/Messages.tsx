@@ -87,22 +87,26 @@ const Messages = () => {
 
         {messages.length > 0 ? (
           <div className="max-h-96 overflow-auto border-y-[1.5px] border-black/20">
-            {messages.map((message, idx) => (
-              <div
-                key={`message__${idx}`}
-                className={`border-b-[1.5px] ${
-                  idx + 1 === messages.length && "border-b-0"
-                } border-black/20 py-5 px-8`}
-              >
-                <div className="flex items-end gap-4">
-                  <p className="">{message.name?.toUpperCase() ?? "NO NAME"}</p>
-                  <p className="text-sm">
-                    {message.createdAt?.toDate()?.toDateString() ?? "NO DATE"}
-                  </p>
+            {messages.map((message, idx) => {
+              return (
+                <div
+                  key={`message__${idx}`}
+                  className={`border-b-[1.5px] border-black/20 py-5 px-8 ${
+                    idx + 1 === messages.length && "border-none"
+                  }`}
+                >
+                  <div className="flex items-end gap-4">
+                    <p className="">
+                      {message.name?.toUpperCase() ?? "NO NAME"}
+                    </p>
+                    <p className="text-sm">
+                      {message.createdAt?.toDate()?.toDateString() ?? "NO DATE"}
+                    </p>
+                  </div>
+                  <p className="pt-2">{message.content}</p>
                 </div>
-                <p className="pt-2">{message.content}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         ) : (
           <div className="border-y-[1.5px] border-black/20 py-3">
