@@ -1,42 +1,27 @@
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import BridesGoom from "@/components/BridesGoom";
+import Countdown from "@/components/Countdown";
+import Gallery from "@/components/Gallery";
+import Header from "@/components/Header";
+import Maps from "@/components/Maps";
+import Messages from "@/components/Messages";
+import Quotes from "@/components/Quotes";
+import { abhaya, nunito, birthstone } from "@/fonts";
 
 export default function Home() {
   return (
     <main
-      className={`w-full min-h-screen h-full flex justify-center ${inter.className}`}
+      className={`w-full min-h-screen h-full flex justify-center ${nunito.variable} ${abhaya.variable} ${birthstone.variable}`}
     >
-      <div
-        className={`w-full md:w-[360px] bg-neutral-100 outline outline-red-500`}
-      >
-        <section>
-          <div>Header here</div>
-        </section>
+      <div className={`w-full md:w-[500px] bg-neutral-100`}>
+        <Header />
+        <Gallery />
+        <Quotes />
+        <BridesGoom />
+        <Countdown dateString={"2023-11-25T12:00:00"} />
+        <Maps />
+        <Messages />
 
-        <section>
-          <div>Gallery photos here</div>
-        </section>
-
-        <section>
-          <div>Quotes here</div>
-        </section>
-
-        <section>
-          <div>Brides and Groom here</div>
-        </section>
-
-        <section>
-          <div>Countdown here</div>
-        </section>
-
-        <section>
-          <div>Maps here</div>
-        </section>
-
-        <section>
-          <div>Message here</div>
-        </section>
+        <footer className="text-sm text-center pb-3">CREATED BY MEMOIRE</footer>
       </div>
     </main>
   );

@@ -9,3 +9,26 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.font-nunito {
+  font-family: var(--font-nunito);
+}
+
+.font-abhaya {
+  font-family: var(--font-abhaya);
+}
+
+.font-birthstone {
+  font-family: var(--font-birthstone);
+}
