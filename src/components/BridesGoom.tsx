@@ -11,6 +11,7 @@ const BridesGoom = () => {
           whileInView={{ x: "0%", opacity: 1 }}
           transition={{
             duration: 1,
+            once: true,
           }}
         >
           <Image
@@ -42,6 +43,7 @@ const BridesGoom = () => {
           whileInView={{ x: "0%", opacity: 1 }}
           transition={{
             duration: 1,
+            once: true,
           }}
         >
           <Image
