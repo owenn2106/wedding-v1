@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const BridesGoom = () => {
   return (
-    <section className="w-screen overflow-x-hidden">
+    <section className="w-full overflow-x-hidden">
       <div>
         <motion.div
           className="pl-20"
