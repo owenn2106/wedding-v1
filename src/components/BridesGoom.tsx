@@ -1,10 +1,18 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const BridesGoom = () => {
   return (
     <section>
       <div>
-        <div className="pl-20">
+        <motion.div
+          className="pl-20"
+          initial={{ x: "100%", opacity: 0 }}
+          whileInView={{ x: "0%", opacity: 1 }}
+          transition={{
+            duration: 1,
+          }}
+        >
           <Image
             src="/bride.webp"
             alt="bride"
@@ -13,7 +21,7 @@ const BridesGoom = () => {
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
           />
-        </div>
+        </motion.div>
 
         <div className="[&>*]:text-center">
           <h3 className="font-birthstone text-gold text-6xl pt-5 pb-3">
@@ -28,7 +36,14 @@ const BridesGoom = () => {
       </div>
 
       <div className="pt-16">
-        <div className="pr-20">
+        <motion.div
+          className="pr-20"
+          initial={{ x: "-100%", opacity: 0 }}
+          whileInView={{ x: "0%", opacity: 1 }}
+          transition={{
+            duration: 1,
+          }}
+        >
           <Image
             src="/groom.webp"
             alt="groom"
@@ -37,7 +52,7 @@ const BridesGoom = () => {
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
           />
-        </div>
+        </motion.div>
 
         <div className="[&>*]:text-center">
           <h3 className="font-birthstone text-gold text-6xl pt-5 pb-3">

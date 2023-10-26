@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
   return (
     <section className="w-full pt-12 flex">
-      <div className="pt-10">
+      <motion.div
+        className="pt-10"
+        initial={{ x: "-100%", opacity: 0 }}
+        whileInView={{ x: "0%", opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+      >
         <Image
           src="/gallery-1.webp"
           alt="photo-1"
@@ -12,9 +20,16 @@ const Gallery = () => {
           height={300}
           style={{ width: "100%", height: "auto" }}
         />
-      </div>
+      </motion.div>
 
-      <div className="px-5">
+      <motion.div
+        className="px-5"
+        initial={{ x: "100%", opacity: 0 }}
+        whileInView={{ x: "0%", opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+      >
         <Image
           src="/gallery-2.webp"
           alt="photo-2"
@@ -23,7 +38,7 @@ const Gallery = () => {
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         />
-      </div>
+      </motion.div>
     </section>
   );
 };
