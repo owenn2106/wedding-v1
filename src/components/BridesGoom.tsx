@@ -9,9 +9,9 @@ const BridesGoom = () => {
           className="pl-20"
           initial={{ x: "100%", opacity: 0 }}
           whileInView={{ x: "0%", opacity: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
-            once: true,
           }}
         >
           <Image
@@ -41,9 +41,9 @@ const BridesGoom = () => {
           className="pr-20"
           initial={{ x: "-100%", opacity: 0 }}
           whileInView={{ x: "0%", opacity: 1 }}
+          viewport={{ once: true }}
           transition={{
             duration: 1,
-            once: true,
           }}
         >
           <Image

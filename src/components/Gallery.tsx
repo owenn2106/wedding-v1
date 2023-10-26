@@ -8,9 +8,9 @@ const Gallery = () => {
         className="pt-10"
         initial={{ x: "-100%", opacity: 0 }}
         whileInView={{ x: "0%", opacity: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 1,
-          once: true,
         }}
       >
         <Image
@@ -27,9 +27,9 @@ const Gallery = () => {
         className="px-5"
         initial={{ x: "100%", opacity: 0 }}
         whileInView={{ x: "0%", opacity: 1 }}
+        viewport={{ once: true }}
         transition={{
           duration: 1,
-          once: true,
         }}
       >
         <Image
