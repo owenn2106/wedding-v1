@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Gallery = () => {
   return (
-    <section className="w-full pt-12 flex">
+    <section className="w-screen pt-12 flex overflow-x-hidden">
       <motion.div
         className="pt-10"
         initial={{ x: "-100%", opacity: 0 }}
