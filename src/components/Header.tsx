@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <section className="min-h-[120vh] px-5 bg-[url(/header.jpg)] bg-cover bg-[55%_0%] font-nunito">
+    <section className="min-h-[120vh] px-5 bg-[url(/header.webp)] bg-cover bg-[55%_0%] font-nunito">
       <div className="pt-20 [&>*]:text-center">
         <p className="tracking-widest text-sm">SAVE THE DATE</p>
         <h1 className="font-birthstone text-gold text-6xl pt-2 pb-5">

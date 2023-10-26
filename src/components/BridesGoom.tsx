@@ -6,7 +6,7 @@ const BridesGoom = () => {
       <div>
         <div className="pl-20">
           <Image
-            src="/bride.png"
+            src="/bride.webp"
             alt="bride"
             width={360}
             height={180}
@@ -30,7 +30,7 @@ const BridesGoom = () => {
       <div className="pt-16">
         <div className="pr-20">
           <Image
-            src="/groom.png"
+            src="/groom.webp"
             alt="groom"
             width={360}
             height={180}
