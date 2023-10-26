@@ -10,6 +10,7 @@ import { abhaya, nunito, birthstone } from "@/fonts";
 import Loader from "@/components/Loader";
 
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
   const [isLoading, setLoading] = useState(true);
@@ -22,6 +23,11 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Wedding of Jeiny & Julio</title>
+        <link rel="icon" href="/memoire-icon.png" />
+      </Head>
+
       <Loader isVisible={isLoading} />
       <motion.main
         className={`w-full h-full flex justify-center ${nunito.variable} ${
